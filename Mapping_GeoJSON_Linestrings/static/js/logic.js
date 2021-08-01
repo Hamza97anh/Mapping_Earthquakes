@@ -14,15 +14,15 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 
 // Create a base layer that holds both maps.
 let baseMaps = {
-    "Streets": streets,
-    "Satellite Streets": satelliteStreets
+    Light: light,
+    Dark: dark
   };
 
  // Create the map object with center, zoom level and default layer.
 let map = L.map('mapid', {
-    center: [43.7, -79.3],
-    zoom: 11,
-    layers: [satelliteStreets]
+    center: [43.6532, -79.3832],
+    zoom: 2,
+    layers: [light]
 })
 
 // Pass our map layers into our layers control and add the layers control to the map.
@@ -31,8 +31,8 @@ L.control.layers(baseMaps).addTo(map);
 //Then we add our 'streets' tile layer to the map.
 light.addTo(map);
 
-// Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/Hamza97anh/Mapping_Earthquakes/main/torontoNeighborhoods.json";
+// Accessing the Toronto airline routes GeoJSON URL.
+let torontoData = "https://raw.githubusercontent.com/trimallya/Mapping_Earthquakes/Mapping_GeoJSON_Linestrings/torontoRoutes.json";
 
 // Create a style for the lines.
 let myStyle = {
