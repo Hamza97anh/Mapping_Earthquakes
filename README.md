@@ -3,8 +3,7 @@
 - Javascript
 - HTML
 - CSS
-- GeoJson
-- 
+- GeoJSON
 ## Project Overview
 Using earthquake data, we created a series of interactive maps showing the data points. The project is to be diplayed via a flask application. 
 ## Results
